@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sebuy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
       <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
-          <a class="navbar-brand">LOGO</a>
+            <a class="navbar-brand" href="/index.html">SEBUY</a>
           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,19 +22,19 @@
           <div class="collapse navbar-collapse" >
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page">Vendedores</a>
+                <a class="nav-link" aria-current="page" href="./vendedores.php">Vendedores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Tu cuenta</a>
+                <a class="nav-link" href="./cuenta.html">Tu cuenta</a>
               </li>
             </ul>
-              <input class="form-control me-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            <div class="col-1 col-sm-d-flex justify-content-end">
-              <div id="cart" class="cart" data-totalitems="0">
+            <div class="row">
+              <div class="col">
+                <button class="btn"><i class="fas fa-user-circle"></i></button>
+              </div>
+              <div id="cart" class="col cart position-relative" data-totalitems="0">
                 <i class="fas fa-shopping-cart"></i>
               </div>
-              <button class="btn"><i class="fas fa-user-circle"></i></button>
             </div>
           </div>
         </div>
@@ -69,118 +69,324 @@
               </button>
             </div>
       </section>
-      <section id="productos">
+      <div id="productos">
         <div class="container">
           <h5>Computacion</h5>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-3">
             <div class="col">
-              <div class="card">
-                <img src="/img/D_NQ_NP_2X_729783-MCO48997675904_022022-F.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="page-wrapper">
-                  <button id="addtocart">
-                    Añadir al carrito
-                    <span class="cart-item"></span>
-                  </button>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/productos31_37098.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">MOUSE GAMER</h5>
+                      <p class="card-text">Mouse gamer de razer.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end">
+                            <button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="page-wrapper">
-                  <button id="addtocart">
-                    Añadir al carrito
-                    <span class="cart-item"></span>
-                  </button>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/2092626582-1602640022596.webp" class="img-fluid w-100 rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/image_256.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">.</p>
+                    <div class="page-wrapper">
+                      <div class="row justify-content-around py-2 text-start">
+                        <div class="col"><i class="far fa-eye"></i></div>
+                        <div class="col text-start"><p class="h5">$150.000</p></div>
+                        <div class="col text-end"><button id="addtocart">
+                          <i class="fas fa-cart-plus"></i>
+                          <span class="cart-item"></span>
+                        </button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/images.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/productos31_19395.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/productos31_39250.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-3" id="computacion">
           </div>
         </div>
         <hr>
         <div class="container">
           <h5>Moda</h5>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-3">
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda6.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda2.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda3.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">.</p>
+                    <div class="page-wrapper">
+                      <div class="row justify-content-around py-2 text-start">
+                        <div class="col"><i class="far fa-eye"></i></div>
+                        <div class="col text-start"><p class="h5">$150.000</p></div>
+                        <div class="col text-end"><button id="addtocart">
+                          <i class="fas fa-cart-plus"></i>
+                          <span class="cart-item"></span>
+                        </button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda4.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda5.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/moda6.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">producto.</p>
+                      <div class="page-wrapper">
+                        <div class="row justify-content-around py-2 text-start">
+                          <div class="col"><i class="far fa-eye"></i></div>
+                          <div class="col text-start"><p class="h5">$150.000</p></div>
+                          <div class="col text-end"><button id="addtocart">
+                            <i class="fas fa-cart-plus"></i>
+                            <span class="cart-item"></span>
+                          </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <hr>
-        <div class="container">
-          <h5>Decoración</h5>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
         <!-- Site footer -->
     <footer class="site-footer mt-5">
@@ -234,7 +440,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

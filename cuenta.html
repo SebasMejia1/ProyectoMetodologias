@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LOGO</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" >
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./vendedores.php">Vendedores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cuenta.html">Tu cuenta</a>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col">
+                  <button class="btn"><i class="fas fa-user-circle"></i></button>
+                </div>
+                <div id="cart" class="col cart position-relative" data-totalitems="0">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside>
+        <div class="app asidebar">
+            <div id="sidenav">
+              <div class="wrapper">
+                <div class="logo">
+                  <a href="#">Tu cuenta</a>
+                  <a href="#" class="nav-icon pull-right"><i class="fa fa-bars"></i></a>
+                </div>
+                <div class="menu">
+                  <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <!-- If login as admin -->
+                    <li>
+                        <ul>
+                          <li><a href="#">Información</a></li>
+                          <li><a href="vendedores.html">Realizar venta</a></li>
+                          <li><a href="index.html">Comprar productos</a></li>
+                          <li><a href="index.html">Comprar productos</a></li>
+                          <li><a href="index.html">Ver tu carrito de compras</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </aside>
+      <div class="main-content">
+        <div class="container mt-7">
+          <!-- Table -->
+          <h2 class="mb-5">My Account Card</h2>
+          <div class="row">
+            <div class="col-xl-8 m-auto order-xl-1">
+              <div class="card bg-secondary shadow">
+                <div class="card-header bg-white border-0">
+                  <div class="row align-items-center">
+                    <div class="col-8">
+                      <h3 class="mb-0">My account</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <h6 class="heading-small mb-4">User information</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-username">Username</label>
+                            <input readonly type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Sebas.Mejia">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-email">Email address</label>
+                            <input readonly type="email" id="input-email" class="form-control form-control-alternative" placeholder="sebas.mejia@gmail.com">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-first-name">First name</label>
+                            <input readonly type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Sebastian">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-last-name">Last name</label>
+                            <input readonly type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Mejia">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                    <!-- Address -->
+                    <h6 class="heading-small mb-4">Contact information</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-address">Address</label>
+                            <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Medayork City" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-city">City</label>
+                            <input readonly type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="New York">
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-country">Country</label>
+                            <input readonly type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-country">Postal code</label>
+                            <input readonly type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
